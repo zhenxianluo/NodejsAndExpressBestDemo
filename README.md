@@ -2,7 +2,7 @@
 
 > 一步一步构建整个项目，并对步骤详细说明，和部分使用技巧，设计开发、数据交互、测试、上传代码库等知识点
 
-#### 克隆本仓库代码到本地并运行
+### 克隆本仓库代码到本地并运行
 > 正常运行条件: 已经成功安装`git、nodejs、npm、mongodb`
 1. 克隆远程仓库到本地: `git clone https://github.com/zhenxianluo/NodejsAndExpressBestDemo.git`
 2. 进入项目目录: `cd NodejsAndExpressBestDemo`
@@ -13,7 +13,7 @@
 7. 启动服务: `npm start`
 8. 浏览器输入`127.0.0.1:3000`便可以看到本页内容
 
-#### 前提说明
+### 前提说明
 > 技术：nodejs + express + mongodb + npm + pugjs + mocha + chai + git  
 
     //目录结构
@@ -38,7 +38,7 @@
         ├── post.pug
         └── register.pug
 
-#### 正式开始
+### 正式开始
 1. 创建并进入目录：`mkdir note-nodejs & cd note-nodejs & touch package.json`
 2. 复制下列{}引起来的代码到package.json,并执行`npm insatll`安装依赖
     ```
@@ -166,7 +166,7 @@
   ```
 - 现在打开浏览器输入127.0.0.1:3000便可以看到本内容。
 
-#### 进入正题，务必同时 阅读+敲代码+思考
+### 进入正题，务必同时 阅读+敲代码+思考
 
 5. 配置mongodb数据库
 - **models/models.js**
@@ -491,10 +491,10 @@
 	5. 提交到本地代码库: `git commit -m "NodejsAndExpressBestDemo"`
 	6. 提交到github代码库: `git push -u origin master`
 
-#### 说明与支持
+### 说明与支持
 假如你是想入门或只懂点皮毛的初学者，请亲手跟着代码敲三遍。注意学习的同时用心思考为什么和怎么做更好，相信你能在学完本教程后学到很多或者入门nodejs后端开发，同时欢迎与我交流技术。如有任何问题或建议请在issues下提问，笔者看到会马上回复的。
 
-请笔者吃个棒棒糖 | 请笔者喝杯奶茶
+请笔者吃个棒棒糖(2 RMB) | 请笔者喝杯奶茶(5 RMB)
 ---------------- | -------------
 ![](./second/twormb.jpg) | ![](./second/fivermb.jpg)
 ### 感谢支持！
