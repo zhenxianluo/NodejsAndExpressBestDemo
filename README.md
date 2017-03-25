@@ -165,12 +165,15 @@
     include:markdown-it ../README.md
   ```
 - 现在打开浏览器输入127.0.0.1:3000便可以看到本内容。
+
+#### 进入正题，务必同时 阅读+敲代码+思考
+
 5. 配置mongodb数据库
 - **models/models.js**
   ```js
   // 引入 mongoose 
   var mongoose = require('mongoose');
-  // 使用 mongoose 连接服务,human是数据库名
+  // 使用 mongoose 连接服务,user是数据库名
   mongoose.connect('mongodb://localhost:27017/user');
   mongoose.connection.on('error', console.error.bind(console, '连接数据库失败'));
   //建立数据结构体
@@ -487,3 +490,10 @@
 	4. 添加更改到本地库: `git add .`
 	5. 提交到本地代码库: `git commit -m "NodejsAndExpressBestDemo"`
 	6. 提交到github代码库: `git push -u origin master`
+
+#### 说明与支持
+假如你是想入门或只懂点皮毛的初学者，请亲手跟着代码敲三遍。注意学习的同时用心思考为什么和怎么做更好，相信你能在学完本教程后学到很多或者入门nodejs后端开发，同时欢迎与我交流技术。如有任何问题或建议请在issues下提问，笔者看到会马上回复的。
+
+![请笔者吃个棒棒糖吧][./second/twormb.jpg]
+![请笔者喝杯奶茶吧][./second/fivermb.jpg]
+感谢支持！
