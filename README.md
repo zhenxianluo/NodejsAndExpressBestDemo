@@ -1,5 +1,17 @@
 ## 教程名：简单的基于express + nodejs的项目构建全览
+
 > 一步一步构建整个项目，并对步骤详细说明，和部分使用技巧，设计开发、数据交互、测试、上传代码库等知识点
+
+#### 克隆本仓库代码到本地并运行
+> 正常运行条件: 已经成功安装`git、nodejs、npm、mongodb`
+1. 克隆远程仓库到本地: `git clone https://github.com/zhenxianluo/NodejsAndExpressBestDemo.git`
+2. 进入项目目录: `cd NodejsAndExpressBestDemo`
+3. 安装依赖: `npm install`
+4. 安装全局依赖: `sudo npm install -g supervisor;sudo npm install -g mocha;`
+5. 启动数据库: `/etc/init.d/mongodb start`
+6. 可选,测试: 'npm test'
+7. 启动服务: `npm start`
+8. 浏览器输入`127.0.0.1:3000`便可以看到本页内容
 
 #### 前提说明
 > 技术：nodejs + express + mongodb + npm + pugjs + mocha + chai + git  
@@ -199,7 +211,7 @@
         else if page == 'register' 
           div
             a(href='/login') 登录
-				else
+        else
           div
             a(href='/register') 注册
           div
@@ -468,3 +480,10 @@
     });
   });
   ```
+8. 项目文件上传到github代码库
+	1. 初始化: `git init`
+	2. 添加远程库: `git remote add origin https://github.com/zhenxianluo/NodejsAndExpressBestDemo.git`
+	3. 创建过滤规则文件: `touch .gitignore & echo node_modules/ > .gitignore`
+	4. 添加更改到本地库: `git add .`
+	5. 提交到本地代码库: `git commit -m "NodejsAndExpressBestDemo"`
+	6. 提交到github代码库: `git push -u origin master`
