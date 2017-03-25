@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "",
+    "test": "mocha -t 1000",
     "start": "supervisor bin/www"
   },
   "author": "",
