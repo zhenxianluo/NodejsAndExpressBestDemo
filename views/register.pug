@@ -1,0 +1,9 @@
+extends header.pug
+block header
+	p= title
+block content
+	input.username(type="text" name="username" placeholder="用户名")
+	input.password(type="password" name="password" placeholder="请输入密码")
+	input.passwordagain(type="password" name="password" placeholder="请再次输入密码")
+	button.register= title
+	.tip(style={color: 'red'})

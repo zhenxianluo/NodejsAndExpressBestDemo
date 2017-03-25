@@ -1,0 +1,5 @@
+extends header.pug
+block header
+	p #{title}
+block content
+	include:markdown-it ../README.md

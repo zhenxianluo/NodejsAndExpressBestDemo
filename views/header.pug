@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title= title
+		script
+			include ../public/js/jquery.min.js
+			include ../public/js/app.js
+	body
+		if user
+			div Hello
+				a(href='/')= user.username
+			div
+				a(href='/quit') 退出
+		else
+			if page == 'login'
+				div
+					a(href='/register') 注册
+			else if page == 'register' 
+				div
+					a(href='/login') 登录
+			else
+				div
+					a(href='/register') 注册
+				div
+					a(href='/login') 登录
+		block header
+		block content
